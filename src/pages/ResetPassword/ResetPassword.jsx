@@ -37,7 +37,7 @@ const ForgotPassword = () => {
   return (
     <ForgotContainerStyled>
       <h1>RESTABLECE TU CONTRASEÑA</h1>
-      <h2>HEMOS ENVIADO UN CODIGO DE VERIFICACIÓN A TU CORREO</h2>
+      <h2>HEMOS ENVIADO UN CÓDIGO DE VERIFICACIÓN A TU CORREO</h2>
       <Formik
         initialValues={passwordResetInitialValues}
         validationSchema={passwordResetValidationSchema}

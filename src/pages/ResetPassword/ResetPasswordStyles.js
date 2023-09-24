@@ -19,6 +19,10 @@ export const ForgotContainerStyled = styled.div`
     color: var(--button-bg-white);
   }
 
+  h2 {
+    color: var(--button-bg-white);
+  }
+
   @media (max-width: 803px) {
     height: calc(88vh - 400px);
   }

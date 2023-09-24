@@ -34,12 +34,11 @@ const ForgotPassword = () => {
   }; */
   return (
     <ForgotContainerStyled>
-      <h1>Reestablece tu contraseña</h1>
+      <h1>RESTABLECE TU CONTRASEÑA</h1>
       <Formik
         initialValues={recoverInitialValues}
         validationSchema={recoverValidationsSchema}
         onSubmit={async values => {
-          console.log(values);
           await recoverPassword(values.email);
           navigate('/reset-password');
         }}
@@ -51,7 +50,7 @@ const ForgotPassword = () => {
               type='button'
               onClick={e => e.preventDefault(handleRegistro())} */
             >
-              Ingresar
+              INGRESAR
             </Submit>
             {/*  {isLoading && <Loader />} */}
           </ButtonContainer>
