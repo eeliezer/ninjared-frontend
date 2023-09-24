@@ -1,0 +1,40 @@
+.custom-item {
+  height: 500px;
+}
+
+.custom-carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 500px;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 500px;
+}
+
+.image2 {
+  display: none !important;
+}
+
+@media screen and (max-width: 803px) {
+  .image1 {
+    display: none !important;
+  }
+
+  .image2 {
+    display: block !important;
+    width: 100%;
+  }
+
+  .custom-carousel-inner {
+    position: relative;
+    width: 645px;
+    overflow: hidden;
+    height: 500px;
+    margin-top: 1px;
+  }
+}
