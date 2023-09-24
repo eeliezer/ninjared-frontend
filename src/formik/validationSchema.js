@@ -53,6 +53,6 @@ export const recoverValidationsSchema = Yup.object({
 export const passwordResetValidationSchema = Yup.object({
   code: Yup.string().required('CORREO ELECTRÓNICO INVÁLIDO'),
   password: Yup.string()
-    .min(8, 'MÍNIMO DE CARACTERES: 6')
+    .min(6, 'MÍNIMO DE CARACTERES: 6')
     .required('CAMPO REQUERIDO'),
 });

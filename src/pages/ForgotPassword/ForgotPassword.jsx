@@ -41,6 +41,7 @@ const ForgotPassword = () => {
         onSubmit={async values => {
           await recoverPassword(values.email);
           navigate('/reset-password');
+          alert('REVISA EL CÓDIGO QUE TE ENVIAMOS A TU CORREO');
         }}
       >
         <Form>

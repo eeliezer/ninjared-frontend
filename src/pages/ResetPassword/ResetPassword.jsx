@@ -49,6 +49,7 @@ const ForgotPassword = () => {
               ...user.user.password,
             })
           );
+          alert('YA PUEDES INGRESAR CON LA NUEVA CONTRASEÑA');
         }}
       >
         <Form>
