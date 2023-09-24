@@ -14,26 +14,11 @@ import {
   Form,
   ButtonContainer,
 } from './ResetPasswordStyles';
-//import { useDispatch } from 'react-redux';
-//import { setCurrentUser } from '../../redux/user/userSlice';
-//import { loginUser } from '../../axios/axios-user';
-//import Loader from '../../components/UI/Loader/Loader';
 
 const ForgotPassword = () => {
-  //  const dispatch = useDispatch();
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  //  const [isLoading, setIsLoading] = useState(false);
 
-  /*   const handleRegistro = () => {
-    setIsLoading(true);
-    setTimeout(() => {
-      setIsLoading(false);
-      alert(
-        'Se ha enviado un correo electrónico, para que restablezcas tu contraseña'
-      );
-    }, 4000);
-  }; */
   return (
     <ForgotContainerStyled>
       <h1>RESTABLECE TU CONTRASEÑA</h1>
@@ -55,13 +40,7 @@ const ForgotPassword = () => {
           <LoginInput name='password' type='password' placeholder='PASSWORD' />
           <LoginInput name='code' type='text' placeholder='CÓDIGO' />
           <ButtonContainer>
-            <Submit /* 
-              type='button'
-              onClick={e => e.preventDefault(handleRegistro())} */
-            >
-              INGRESAR
-            </Submit>
-            {/*  {isLoading && <Loader />} */}
+            <Submit>INGRESAR</Submit>
             <ForgotEmailStyled onClick={() => navigate('/login')}>
               VOLVER A INICIAR SESIÓN
             </ForgotEmailStyled>
